@@ -1,13 +1,13 @@
-﻿using Cqrs.Application.DTOs.Common;
+﻿
+using Cqrs.Application.DTOs.Common;
+using Cqrs.Application.DTOs.LeaveType;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Cqrs.Application.DTOs.LeaveRequest
 {
-    public class LeaveRequestListDto :BaseDto
+    public class LeaveRequestListDto : BaseDto
     {
         //public Employee Employee { get; set; }
         public string RequestingEmployeeId { get; set; }

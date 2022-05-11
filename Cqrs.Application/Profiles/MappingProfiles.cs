@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using Cqrs.Application.DTOs;
+using Cqrs.Application.DTOs.LeaveAllocation;
 using Cqrs.Application.DTOs.LeaveRequest;
+using Cqrs.Application.DTOs.LeaveType;
 using Cqrs.Domain;
 using System;
 using System.Collections.Generic;
@@ -24,7 +26,7 @@ namespace Cqrs.Application.Profiles
             #endregion LeaveRequest
 
             CreateMap<LeaveAllocation, LeaveAllocationDto>().ReverseMap();
-            //CreateMap<LeaveAllocation, CreateLeaveAllocationDto>().ReverseMap();
+            CreateMap<LeaveAllocation, CreateLeaveAllocationDto>().ReverseMap();
             //CreateMap<LeaveAllocation, UpdateLeaveAllocationDto>().ReverseMap();
 
             CreateMap<LeaveType, LeaveTypeDto>().ReverseMap();
